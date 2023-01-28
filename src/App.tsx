@@ -109,12 +109,12 @@ const App: FC = () => {
 
   return (
     <div>
-      <div className="bg-black grid place-content-center p-4 h-screen">
+      <div className="bg-[#333] grid place-content-center p-4 h-screen">
         <div className="grid gap-y-8">
           <div className="text-white text-7xl text-end font-light">
             {formatNum(Number(displayNum))}
           </div>
-          <div className="grid grid-cols-calculator auto-rows-calculator">
+          <div className="grid grid-cols-calculator auto-rows-calculator gap-2">
             <AllClearButton onClick={clear}>AC</AllClearButton>
             <PercentButton onClick={percent}>
               <RiPercentLine />
